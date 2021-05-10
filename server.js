@@ -40,6 +40,7 @@ app.post('/action', (req, res) => {
         var validator = new validation.ActionableMessageTokenValidator();
         
         // validateToken will verify the following
+        //
         // 1. The token is issued by Microsoft and its digital signature is valid.
         // 2. The token has not expired.
         // 3. The audience claim matches the service domain URL.
